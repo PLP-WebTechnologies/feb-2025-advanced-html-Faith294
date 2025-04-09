@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        /* Basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advanced HTML5 Elements and Forms</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>External Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Description of Image" style="max-width:100%;height:auto;">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Liza Koshy</td>
+                    <td>423 Nkrumah Road,Mombasa</td>
+                    <td>+254738496767</td>
+                    <td>lizakoshy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Martin Garrix</td>
+                    <td>135 Moi Avenue,Nairobi</td>
+                    <td>+254798765432</td>
+                    <td>martingar@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Britney May</td>
+                    <td>59 Mangi St, Eldoret</td>
+                    <td>+254701234567</td>
+                    <td>britneymay@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Matthew Mark</td>
+                    <td>321 Ngeny St, Kisumu</td>
+                    <td>+254712536375</td>
+                    <td>matthewmark@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Ethan Whatt</td>
+                    <td>344 Jomo St, Nakuru</td>
+                    <td>+254723452689</td>
+                    <td>ethanwhatt@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Dropdown Field -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="rwanda">Rwanda</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                <label><input type="checkbox" name="interests" value="music"> Music</label>
+                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+</body>
+</html>
